@@ -1,15 +1,15 @@
 .draw {
     fill: transparent;
-    stroke: #370000;
+    stroke: #000;
     stroke-width: 1px;
     stroke-linecap: butt;
     stroke-linejoin: miter;
     stroke-opacity: 1;
-    animation: draw 3s ease-in-out forwards;
+    animation: draw 2s ease-in-out forwards;
 }
 
 .curve {
-    animation: curve 3s forwards;
+    animation: curve 3s 2 alternate;
 }
 
 @keyframes draw {

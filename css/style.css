@@ -1,0 +1,222 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  position: relative;
+  font-family: "Amatic SC", cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes stretchLine {
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes shrinkLine {
+  to {
+    transform: scaleX(0);
+  }
+}
+.navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding: 0 30px;
+  position: relative;
+}
+.navBar::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  height: 0.5px;
+  transform: scaleX(0);
+  animation: stretchLine 2s 3500ms forwards;
+}
+
+.navabar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  height: 100%;
+  width: 100%;
+}
+
+.socialIcon {
+  width: 25px;
+  height: 25px;
+}
+
+.socialIcon__path {
+  stroke: #000;
+  stroke-width: 1px;
+}
+
+path {
+  fill: #fff;
+}
+
+.socialIcon__path:hover > .socialIcon__backgroundPath--facebook {
+  fill: #3b5998;
+}
+
+.socialIcon__path:hover > .socialIcon__backgroundPath--instagram {
+  fill: url(#gradient) #ccc;
+}
+
+.socialIcon__path:hover > .socialIcon__backgroundPath--phone {
+  fill: green;
+}
+
+.socialIcon__path path {
+  stroke-opacity: 1;
+  animation: draw 3s ease-in-out forwards;
+}
+
+@keyframes draw {
+  to {
+    /* stroke-dashoffset: 0; */
+    stroke-dashoffset: 0;
+  }
+}
+@media (min-width: 768px) {
+  .socialIcon {
+    width: 50px;
+    height: 50px;
+  }
+}
+.nav {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 30px;
+  padding-top: 60px;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  list-style: none;
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+  font-size: 20px;
+}
+.nav::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  height: 0.5px;
+  transform: scaleX(0);
+  animation: stretchLine 2s 0ms forwards;
+}
+
+.nav--hidden {
+  top: calc(-100% - 120px);
+}
+.nav--hidden::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  height: 0.5px;
+  transform: scaleY(1);
+  animation: shrinkLine 0.5s forwards;
+}
+
+.nav__item {
+  margin-bottom: 1rem;
+}
+
+.nav__link {
+  color: inherit;
+}
+
+.menuToggler {
+  z-index: 100;
+  width: 25px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.menuToggler__bar {
+  border: 0.5px solid #000;
+  width: 100%;
+  height: 4px;
+  transition: all 0.3s;
+}
+
+@media (min-width: 768px) {
+  .menuToggler {
+    display: none;
+  }
+}
+.cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.9;
+}
+
+.cover--hidden {
+  display: none;
+}
+
+.onload__cover {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 900;
+  animation: removeBackground 1s 3s linear forwards;
+}
+
+.onload__logo {
+  z-index: 1000;
+  margin-right: auto;
+  width: 60%;
+  height: auto;
+  position: absolute;
+  top: 35vh;
+  left: 0;
+  animation: moveTheBird 1s 2s linear forwards;
+}
+
+@keyframes moveTheBird {
+  to {
+    top: -35px;
+    left: calc(50vw - 160px);
+    width: 200px;
+  }
+}
+@keyframes removeBackground {
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

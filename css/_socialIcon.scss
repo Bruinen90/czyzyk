@@ -1,0 +1,45 @@
+.socialIcon {
+    width: 25px;
+    height: 25px;
+}
+
+.socialIcon__path {
+    stroke: #000;
+    stroke-width: 1px;
+}
+
+path {
+    fill: #fff;
+}
+
+.socialIcon__path:hover > .socialIcon__backgroundPath--facebook {
+    fill: #3b5998;
+}
+
+.socialIcon__path:hover > .socialIcon__backgroundPath--instagram {
+    fill: url(#gradient) #ccc;
+}
+
+.socialIcon__path:hover > .socialIcon__backgroundPath--phone {
+    fill: green;
+}
+
+.socialIcon__path path {
+    stroke-opacity: 1;
+    animation: draw 3s ease-in-out forwards;
+}
+
+@keyframes draw {
+    to {
+        /* stroke-dashoffset: 0; */
+        stroke-dashoffset: 0;
+    }
+}
+
+
+@media (min-width: $desktop) {
+    .socialIcon {
+        width: 50px;
+        height: 50px;
+    }
+}

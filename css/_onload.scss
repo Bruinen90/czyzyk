@@ -1,0 +1,36 @@
+.onload__cover {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, .7);
+    z-index: 900;
+    animation: removeBackground 1s 3s linear forwards;
+}
+
+.onload__logo {
+    z-index: 1000;
+    margin-right: auto;
+    width: 60%;
+    height: auto;
+    position: absolute;
+    top: 35vh;
+    left: 0;
+    animation: moveTheBird 1s 2s linear forwards;
+}
+
+@keyframes moveTheBird {
+    to {
+        top: -35px;
+        left: calc(50vw - 160px);
+        width: 200px;
+    }
+}
+
+@keyframes removeBackground {
+    to {
+        opacity: 0;
+        z-index: -1;
+    }
+}

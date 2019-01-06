@@ -1,0 +1,41 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    position: relative;
+    font-family: $basic-font;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+@mixin animatedBottomBorder($delay) {
+    &::after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: $color-dark;
+        height: .5px;
+        transform: scaleX(0);
+        animation: stretchLine 2s $delay forwards;
+    }
+}
+
+@keyframes stretchLine {
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes shrinkLine {
+    to {
+        transform: scaleX(0);
+    }
+}

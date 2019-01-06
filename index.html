@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Czyżyk Ciastki & Co cukiernia, wypieki i śniadania Kraków, ul. Orlińskiego 5</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="onload">
+            <object type="image/svg+xml" data="bird_in_parts_2.svg" class="onload__logo">SVG image failed!</object>
+            <div class="onload__cover"></div>
+        </div>
+
+        <div class="cover cover--hidden" onclick="toggleMenu()"></div>
+
+        <nav class="navBar">
+            <div class="navabar__container">
+                <div class="navbar__icons">
+                    <a
+                        href="https://www.facebook.com/czyzykpiekarniakawiarnia/"
+                        target="_blank">
+                        <object
+                            type="image/svg+xml"
+                            data="./img/icons/icon_facebook.svg"
+                            class="socialIcon"
+                        >
+                          Znajdź nas na Facebooku
+                        </object>
+                    </a>
+                    <a
+                        href="https://www.instagram.com/czyzyk.kawiarnia/"
+                        target="_blank">
+                        <object
+                            type="image/svg+xml"
+                            data="./img/icons/icon_instagram.svg"
+                            class="socialIcon"
+                        >
+                          Nasza galeria na Ingtaramie
+                        </object>
+                    </a>
+                    <a href="tel: +48883418249" target="_blank">
+                        <object
+                            type="image/svg+xml"
+                            data="./img/icons/icon_phone.svg"
+                            class="socialIcon"
+                        >
+                          Zadzwoń i zamów wypieki
+                        </object>
+                    </a>
+                </div>
+
+                <ul class="nav nav--hidden">
+                    <li class="nav__item">
+                        <a href="oferta.html" class="nav__link">
+                            Oferta
+                        </a>
+                    </li>
+                    <li class="nav__item ">
+                        <a href="cennik.html" class="nav__link">
+                            Cennik
+                        </a>
+                    </li>
+                    <li class="nav__item ">
+                        <a href="kontakt" class="nav__link">
+                            Kontakt
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="menuToggler" onClick='toggleMenu()'>
+                    <div class="menuToggler__bar menuToggler__bar1"></div>
+                    <div class="menuToggler__bar menuToggler__bar2"></div>
+                    <div class="menuToggler__bar menuToggler__bar3"></div>
+                </div>
+
+            </div>
+        </nav>
+
+    <script type="text/javascript" src="js/menuToggler.js"></script>
+    </body>
+</html>

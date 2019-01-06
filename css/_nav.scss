@@ -1,0 +1,39 @@
+.nav  {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 30px;
+    padding-top: 60px;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    list-style: none;
+    transition: all .5s ease-in-out;
+    z-index: 2;
+    font-size: 20px;
+    @include animatedBottomBorder(0ms);
+}
+
+.nav--hidden {
+    top: calc(-100% - 120px);
+    &::after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: $color-dark;
+        height: .5px;
+        transform: scaleY(1);
+        animation: shrinkLine .5s forwards;
+    }
+}
+
+.nav__item {
+    margin-bottom: 1rem;
+}
+
+.nav__link {
+    color: inherit;
+}
