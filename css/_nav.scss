@@ -34,6 +34,32 @@
     margin-bottom: 1rem;
 }
 
+.nav__item--socials {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
 .nav__link {
     color: inherit;
+}
+
+
+@media (min-width: $desktop) {
+    .nav {
+        position: static;
+        display: flex;
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav__item {
+        margin: 0;
+        margin-left: 20px;
+        font-size: 28px;
+        position: relative;
+        @include animatedLinkBorder;
+    }
 }

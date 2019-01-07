@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Czyżyk Ciastki & Co cukiernia, wypieki i śniadania Kraków, ul. Orlińskiego 5</title>
         <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Libre+Baskerville:400,700" rel="stylesheet">
     </head>
     <body>
 
@@ -18,38 +18,35 @@
 
         <nav class="navBar">
             <div class="navabar__container">
-                <div class="navbar__icons">
-                    <a
+                <div class="navbar__icons navbar__icons--desktop">
+                    <object
+                        type="image/svg+xml"
+                        data="./img/icons/icon_facebook.svg"
+                        class="socialIcon"
+                        onclick="console.log('miau')"
                         href="https://www.facebook.com/czyzykpiekarniakawiarnia/"
-                        target="_blank">
-                        <object
-                            type="image/svg+xml"
-                            data="./img/icons/icon_facebook.svg"
-                            class="socialIcon"
-                        >
-                          Znajdź nas na Facebooku
-                        </object>
-                    </a>
-                    <a
-                        href="https://www.instagram.com/czyzyk.kawiarnia/"
-                        target="_blank">
-                        <object
-                            type="image/svg+xml"
-                            data="./img/icons/icon_instagram.svg"
-                            class="socialIcon"
-                        >
-                          Nasza galeria na Ingtaramie
-                        </object>
-                    </a>
-                    <a href="tel: +48883418249" target="_blank">
-                        <object
-                            type="image/svg+xml"
-                            data="./img/icons/icon_phone.svg"
-                            class="socialIcon"
-                        >
-                          Zadzwoń i zamów wypieki
-                        </object>
-                    </a>
+                    >
+                      Znajdź nas na Facebooku
+                    </object>
+                    <object
+                        type="image/svg+xml"
+                        data="./img/icons/icon_instagram.svg"
+                        class="socialIcon"
+                    >
+                      Nasza galeria na Ingtaramie
+                    </object>
+                    <object
+                        type="image/svg+xml"
+                        data="./img/icons/icon_phone.svg"
+                        class="socialIcon"
+                    >
+                      Zadzwoń i zamów wypieki
+                    </object>
+                </div>
+
+                <div class="logoCaption">
+                    <div class="logoCaption__main">Czyżyk</div>
+                    <div class="logoCaption__sub">Ciastki<br/>&Co</div>
                 </div>
 
                 <ul class="nav nav--hidden">
@@ -68,6 +65,33 @@
                             Kontakt
                         </a>
                     </li>
+                    <li class="nav__item nav__item--socials">
+                        <div class="navbar__icons navbar__icons--mobile">
+                            <object
+                                type="image/svg+xml"
+                                data="./img/icons/icon_facebook.svg"
+                                class="socialIcon"
+                                onclick="console.log('miau')"
+                                href="https://www.facebook.com/czyzykpiekarniakawiarnia/"
+                            >
+                              Znajdź nas na Facebooku
+                            </object>
+                            <object
+                                type="image/svg+xml"
+                                data="./img/icons/icon_instagram.svg"
+                                class="socialIcon"
+                            >
+                              Nasza galeria na Ingtaramie
+                            </object>
+                            <object
+                                type="image/svg+xml"
+                                data="./img/icons/icon_phone.svg"
+                                class="socialIcon"
+                            >
+                              Zadzwoń i zamów wypieki
+                            </object>
+                        </div>
+                    </li>
                 </ul>
 
                 <div class="menuToggler" onClick='toggleMenu()'>
@@ -79,6 +103,33 @@
             </div>
         </nav>
 
+        <section class="slider">
+            <div class="slider__container">
+                <div
+                    style="background-image: url('./img/photos/wedding_cake.jpg')"
+                    class="slider__slide">
+                    <h2 class="slider__title">Perfekcyjne torty okolicznościowe</h2>
+                </div>
+                <div
+                    style="background-image: url('./img/photos/cafe_top.jpg')"
+                    class="slider__slide">
+                    <h2 class="slider__title">Doskonała kawa</h2>
+                </div>
+                <div
+                    style="background-image: url('./img/photos/cake_top.jpg')"
+                    class="slider__slide">
+                    <h2 class="slider__title">Naturalne i świeże wypieki</h2>
+                </div>
+                <div
+                    style="background-image: url('./img/photos/croissant.jpg')"
+                    class="slider__slide">
+                    <h2 class="slider__title">Pyszne śniadania</h2>
+                </div>
+
+            </div>
+        </section>
+
     <script type="text/javascript" src="js/menuToggler.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
     </body>
 </html>

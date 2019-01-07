@@ -11,9 +11,31 @@
 
 .navabar__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     max-width: 1440px;
     height: 100%;
     width: 100%;
+}
+
+.navbar__icons {
+    width: auto;
+}
+
+.navbar__icons--desktop {
+    display: none;
+}
+
+@media (min-width: $desktop) {
+    .navabar__container {
+        justify-content: space-between;
+    }
+
+    .navbar__icons--desktop {
+        display: flex;
+    }
+
+    .navbar__icons--mobile {
+        display: none;
+    }
 }

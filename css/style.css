@@ -24,6 +24,11 @@ a {
     transform: scaleX(0);
   }
 }
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 .navBar {
   display: flex;
   justify-content: center;
@@ -42,26 +47,52 @@ a {
   background-color: #000;
   height: 0.5px;
   transform: scaleX(0);
-  animation: stretchLine 2s 3500ms forwards;
+  animation: stretchLine 1s 3500ms forwards;
 }
 
 .navabar__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   max-width: 1440px;
   height: 100%;
   width: 100%;
 }
 
+.navbar__icons {
+  width: auto;
+}
+
+.navbar__icons--desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navabar__container {
+    justify-content: space-between;
+  }
+
+  .navbar__icons--desktop {
+    display: flex;
+  }
+
+  .navbar__icons--mobile {
+    display: none;
+  }
+}
 .socialIcon {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
+  position: relative;
 }
 
 .socialIcon__path {
   stroke: #000;
   stroke-width: 1px;
+}
+
+.socialIcon__g {
+  cursor: pointer;
 }
 
 path {
@@ -95,6 +126,7 @@ path {
   .socialIcon {
     width: 50px;
     height: 50px;
+    margin-right: 10px;
   }
 }
 .nav {
@@ -121,7 +153,7 @@ path {
   background-color: #000;
   height: 0.5px;
   transform: scaleX(0);
-  animation: stretchLine 2s 0ms forwards;
+  animation: stretchLine 1s 0ms forwards;
 }
 
 .nav--hidden {
@@ -143,10 +175,47 @@ path {
   margin-bottom: 1rem;
 }
 
+.nav__item--socials {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
 .nav__link {
   color: inherit;
 }
 
+@media (min-width: 768px) {
+  .nav {
+    position: static;
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav__item {
+    margin: 0;
+    margin-left: 20px;
+    font-size: 28px;
+    position: relative;
+  }
+  .nav__item::after {
+    content: " ";
+    width: 100%;
+    height: 0.5px;
+    background-color: #000;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: ease-in-out 0.2s;
+    transform: scaleX(0);
+  }
+  .nav__item:hover::after {
+    transform: none;
+  }
+}
 .menuToggler {
   z-index: 100;
   width: 25px;
@@ -155,6 +224,8 @@ path {
   flex-direction: column;
   justify-content: space-around;
   cursor: pointer;
+  opacity: 0;
+  animation: fadeIn 1s 4s linear forwards;
 }
 
 .menuToggler__bar {
@@ -186,7 +257,7 @@ path {
 .onload__cover {
   width: 100%;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.7);
@@ -208,7 +279,7 @@ path {
 @keyframes moveTheBird {
   to {
     top: -35px;
-    left: calc(50vw - 160px);
+    left: calc(50vw - 170px);
     width: 200px;
   }
 }
@@ -216,6 +287,104 @@ path {
   to {
     opacity: 0;
     z-index: -1;
+  }
+}
+.slider {
+  position: relative;
+}
+
+.slider__container {
+  width: 100%;
+  height: calc(100vh - 100px);
+  position: relative;
+  background-color: #fff;
+}
+
+.slider__slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: all 1s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider__slide::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+}
+
+.slider__title {
+  z-index: 2;
+  font-weight: normal;
+  font-size: 36px;
+  text-align: center;
+}
+
+.slider__slide--hidden {
+  opacity: 0;
+}
+
+@media (min-width: 768px) {
+  .slider__title {
+    font-size: 72px;
+  }
+}
+.logoCaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding-top: 75px;
+  position: absolute;
+  top: -180px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-family: "Libre Baskerville", serif;
+  z-index: 10;
+  width: 185px;
+  height: 170px;
+  background-color: #fff;
+  border: 0.5px solid #000;
+  border-top: 0;
+  padding-bottom: 20px;
+  animation: slideIn 1s 1.5s linear forwards;
+}
+.logoCaption::after {
+  position: absolute;
+  top: 0;
+  left: 10.25px;
+  content: " ";
+  width: 162.5px;
+  height: 160px;
+  background-color: transparent;
+  border: 0.5px solid #000;
+  border-top: 0;
+  z-index: 2;
+}
+
+.logoCaption__main {
+  font-size: 28px;
+  z-index: 100;
+}
+
+@keyframes slideIn {
+  to {
+    top: 0;
   }
 }
 

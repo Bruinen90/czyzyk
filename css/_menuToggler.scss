@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: space-around;
     cursor: pointer;
+    @include fadeInAfterBird;
 }
 
 .menuToggler__bar {

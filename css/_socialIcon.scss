@@ -1,11 +1,16 @@
 .socialIcon {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
+    position: relative;
 }
 
 .socialIcon__path {
     stroke: #000;
     stroke-width: 1px;
+}
+
+.socialIcon__g {
+    cursor: pointer;
 }
 
 path {
@@ -41,5 +46,6 @@ path {
     .socialIcon {
         width: 50px;
         height: 50px;
+        margin-right: 10px;
     }
 }
