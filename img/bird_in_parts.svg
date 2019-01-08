@@ -16,7 +16,10 @@
    height="291.89621"
    viewBox="0 0 547.62372 291.89621"
    sodipodi:docname="bird_in_parts_2.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   onclick="window.open('../index.html', '_blank')"
+   style="cursor: pointer"
+   >
   <metadata
      id="metadata3719">
     <rdf:RDF>

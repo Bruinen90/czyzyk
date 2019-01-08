@@ -1,0 +1,55 @@
+.contactData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.contactData__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.contactData__icon {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.contactData__info--small {
+    font-size: .6em;
+    margin-top: 10px;
+}
+
+.contactData__address {
+    font-size: .75em;
+    margin-top: 10px;
+}
+
+.contactData__callLink {
+    color: inherit;
+    font-size: 1.2em;
+}
+
+@media (min-width: $desktop) {
+    .contactData__container {
+        flex-direction: row;
+        font-size: 46px;
+    }
+
+    .contactData__icon {
+        width: 1em;
+        height: 1em;
+        margin-right: 1em;
+    }
+
+    .contactData__callLink {
+        pointer-events: none;
+        cursor: default;
+    }
+}

@@ -16,18 +16,3 @@ const toggleMenu = () => {
     const mobileSocialIcons = document.querySelector('.navbar__icons--mobile');
     mobileSocialIcons.classList.toggle('navbar__icons--hidden');
 }
-
-const goTo = (element) => {
-    toggleMenu();
-    element.scrollIntoView({behavior: 'smooth', block: 'start'});
-}
-
-const navItems = document.querySelectorAll('.nav__item')
-navItems.forEach(item => {
-    let targetElement = document.querySelector('.'+item.dataset.target);
-    if(item.dataset.target === 'facebook') {
-        item.addEventListener('click', ()=> window.open('https://www.facebook.com/WoloveBurgersMistrzejowiceNH/', '_blank'));
-    } else {
-        item.addEventListener('click', ()=>goTo(targetElement))
-    }
-})
