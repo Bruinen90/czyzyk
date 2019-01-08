@@ -6,6 +6,11 @@
     height: 100px;
     padding: 0 30px;
     position: relative;
+    border-bottom: .5px solid $color-dark;
+}
+
+.navBar--animated {
+    border-bottom: 0;
     @include animatedBottomBorder(3500ms);
 }
 
@@ -23,6 +28,10 @@
 }
 
 .navbar__icons--desktop {
+    display: none;
+}
+
+.navbar__icons--hidden {
     display: none;
 }
 

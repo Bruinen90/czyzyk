@@ -37,8 +37,13 @@ a {
   height: 100px;
   padding: 0 30px;
   position: relative;
+  border-bottom: 0.5px solid #000;
 }
-.navBar::after {
+
+.navBar--animated {
+  border-bottom: 0;
+}
+.navBar--animated::after {
   content: " ";
   position: absolute;
   left: 0;
@@ -64,6 +69,10 @@ a {
 }
 
 .navbar__icons--desktop {
+  display: none;
+}
+
+.navbar__icons--hidden {
   display: none;
 }
 
@@ -224,6 +233,9 @@ path {
   flex-direction: column;
   justify-content: space-around;
   cursor: pointer;
+}
+
+.menuToggler--animated {
   opacity: 0;
   animation: fadeIn 1s 4s linear forwards;
 }
@@ -262,17 +274,28 @@ path {
   left: 0;
   background-color: rgba(255, 255, 255, 0.7);
   z-index: 900;
+  display: none;
+}
+
+.onload__cover--animated {
+  display: block;
   animation: removeBackground 1s 3s linear forwards;
 }
 
 .onload__logo {
   z-index: 1000;
   margin-right: auto;
-  width: 60%;
   height: auto;
   position: absolute;
-  top: 35vh;
+  top: -35px;
+  left: calc(50vw - 170px);
+  width: 200px;
+}
+
+.onload__logo--animated {
   left: 0;
+  width: 60%;
+  top: 35vh;
   animation: moveTheBird 1s 2s linear forwards;
 }
 
@@ -287,6 +310,15 @@ path {
   to {
     opacity: 0;
     z-index: -1;
+  }
+}
+@media (min-width: 768px) {
+  .onload__logo {
+    top: -35px;
+  }
+
+  .onload__logo--animated {
+    top: 0;
   }
 }
 .slider {
@@ -362,7 +394,7 @@ path {
   border: 0.5px solid #000;
   border-top: 0;
   padding-bottom: 20px;
-  animation: slideIn 1s 1.5s linear forwards;
+  animation: slideIn 0s linear forwards;
 }
 .logoCaption::after {
   position: absolute;
@@ -377,6 +409,15 @@ path {
   z-index: 2;
 }
 
+.logoCaption--animated {
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+}
+
+.logoCaption--hidden {
+  animation: slideOut 0.5s linear;
+}
+
 .logoCaption__main {
   font-size: 28px;
   z-index: 100;
@@ -384,8 +425,22 @@ path {
 
 @keyframes slideIn {
   to {
-    top: 0;
+    transform: translateY(180px);
   }
+}
+@keyframes slideOut {
+  from {
+    transform: translateY(180px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+.map {
+  width: 100%;
+  height: 40vh;
+  margin: 0;
+  background-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

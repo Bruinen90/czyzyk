@@ -9,14 +9,13 @@
     </head>
     <body>
 
-        <div class="onload onload--animated">
-            <object type="image/svg+xml" data="img/bird_in_parts_2.svg" class="onload__logo onload__logo--animated">SVG image failed!</object>
-            <div class="onload__cover"></div>
+        <div class="logo">
+            <object type="image/svg+xml" data="img/bird_in_parts.svg" class="onload__logo">SVG image failed!</object>
         </div>
 
         <div class="cover cover--hidden" onclick="toggleMenu()"></div>
 
-        <nav class="navBar navBar--animated">
+        <nav class="navBar">
             <div class="navabar__container">
                 <div class="navbar__icons navbar__icons--desktop">
                     <object
@@ -44,7 +43,7 @@
                     </object>
                 </div>
 
-                <div class="logoCaption logoCaption--animated">
+                <div class="logoCaption">
                     <div class="logoCaption__main">Czyżyk</div>
                     <div class="logoCaption__sub">Ciastki<br/>&Co</div>
                 </div>
@@ -61,7 +60,7 @@
                         </a>
                     </li>
                     <li class="nav__item ">
-                        <a href="kontakt.html" class="nav__link">
+                        <a href="kontakt" class="nav__link">
                             Kontakt
                         </a>
                     </li>
@@ -94,7 +93,7 @@
                     </li>
                 </ul>
 
-                <div class="menuToggler menuToggler--animated" onClick='toggleMenu()'>
+                <div class="menuToggler" onClick='toggleMenu()'>
                     <div class="menuToggler__bar menuToggler__bar1"></div>
                     <div class="menuToggler__bar menuToggler__bar2"></div>
                     <div class="menuToggler__bar menuToggler__bar3"></div>
@@ -103,33 +102,14 @@
             </div>
         </nav>
 
-        <section class="slider">
-            <div class="slider__container">
-                <div
-                    style="background-image: url('./img/photos/wedding_cake.jpg')"
-                    class="slider__slide">
-                    <h2 class="slider__title">Perfekcyjne torty okolicznościowe</h2>
-                </div>
-                <div
-                    style="background-image: url('./img/photos/cafe_top.jpg')"
-                    class="slider__slide">
-                    <h2 class="slider__title">Doskonała kawa</h2>
-                </div>
-                <div
-                    style="background-image: url('./img/photos/cake_top.jpg')"
-                    class="slider__slide">
-                    <h2 class="slider__title">Naturalne i świeże wypieki</h2>
-                </div>
-                <div
-                    style="background-image: url('./img/photos/croissant.jpg')"
-                    class="slider__slide">
-                    <h2 class="slider__title">Pyszne śniadania</h2>
-                </div>
-
-            </div>
+        <section class="map">
+            <div></div>
         </section>
 
+
     <script type="text/javascript" src="js/menuToggler.js"></script>
-    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAskFBsctNtfexmuveiwsbvFRaROfwIADA&callback=initMap"
+async defer></script>
     </body>
 </html>

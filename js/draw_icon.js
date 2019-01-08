@@ -1,5 +1,5 @@
 const elements = document.querySelectorAll('path');
-let prevDelay = 3500;
+let prevDelay = 0;
 elements.forEach((element, index) => {
     element.style.strokeDasharray = element.getTotalLength()*1.05;
     element.style.strokeDashoffset = element.getTotalLength()*1.05;

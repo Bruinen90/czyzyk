@@ -6,17 +6,28 @@
     left: 0;
     background-color: rgba(255, 255, 255, .7);
     z-index: 900;
+    display: none;
+}
+
+.onload__cover--animated {
+    display: block;
     animation: removeBackground 1s 3s linear forwards;
 }
 
 .onload__logo {
     z-index: 1000;
     margin-right: auto;
-    width: 60%;
     height: auto;
     position: absolute;
-    top: 35vh;
+    top: -35px;
+    left: calc(50vw - 170px);
+    width: 200px;
+}
+
+.onload__logo--animated {
     left: 0;
+    width: 60%;
+    top: 35vh;
     animation: moveTheBird 1s 2s linear forwards;
 }
 
@@ -32,5 +43,15 @@
     to {
         opacity: 0;
         z-index: -1;
+    }
+}
+
+@media (min-width: $desktop) {
+    .onload__logo {
+        top: -35px;
+    }
+
+    .onload__logo--animated {
+        top: 0;
     }
 }
