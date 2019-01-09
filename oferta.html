@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Czyżyk Ciastki & Co cukiernia, wypieki i śniadania Kraków, ul. Orlińskiego 5</title>
         <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Libre+Baskerville:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Libre+Baskerville:400,700|Thasadith" rel="stylesheet">
     </head>
     <body>
 
@@ -98,26 +98,26 @@
 
         <section class="offer">
             <div class="offer__container">
-                <div class="offer__square">
-                    <img src="img/offer/tarta.svg" alt="" class="offer__draw">
+                <div class="offer__square" id="ciasta">
+                    <img src="img/offer/tarta.svg" alt="Ciasta, tarty i ciasteczka" class="offer__draw">
                     <h2 class="offer_header">
                         Ciasta, tarty i ciasteczka
                     </h2>
                 </div>
-                <div class="offer__square">
-                    <img src="img/offer/tort.svg" alt="" class="offer__draw">
+                <div class="offer__square" id="torty">
+                    <img src="img/offer/tort.svg" alt="Torty na każdą okazję" class="offer__draw">
                     <h2 class="offer_header">
                         Torty na każdą okazję
                     </h2>
                 </div>
-                <div class="offer__square">
-                    <img src="img/offer/coffee.svg" alt="" class="offer__draw">
+                <div class="offer__square" id="kawa">
+                    <img src="img/offer/coffee.svg" alt="Kawa i herbata" class="offer__draw">
                     <h2 class="offer_header">
                         Kawa i herbata
                     </h2>
                 </div>
-                <div class="offer__square">
-                    <img src="img/offer/croissant.svg" alt="" class="offer__draw">
+                <div class="offer__square" id="sniadania">
+                    <img src="img/offer/croissant.svg" alt="Śniadania" class="offer__draw">
                     <h2 class="offer_header">
                         Śniadania
                     </h2>
@@ -125,6 +125,39 @@
             </div>
         </section>
 
-    <script type="text/javascript" src="js/menuToggler.js"></script>
+        <section>
+            <div class="category" id="cat__ciasta">
+                <h2 class="category__header">Ciasta</h2>
+                <div class="category__productImage" style="background-image: url('./img/offer/ciasta.jpg')"></div>
+                <div class="category__productDescription">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo non, dolorem doloribus pariatur maxime fuga tempore velit, esse assumenda eaque, vero sint nobis blanditiis repudiandae nesciunt dicta voluptatibus ea iste dolor eligendi ipsum. Totam quasi similique velit delectus debitis, sed dolore consectetur, est quia dignissimos iure cum ipsum, eligendi et.
+                </div>
+            </div>
+            <div class="category" id="cat__torty">
+                <h2 class="category__header">Torty</h2>
+                <div class="category__productImage" style="background-image: url('./img/offer/torty.jpg')"></div>
+                <div class="category__productDescription">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo non, dolorem doloribus pariatur maxime fuga tempore velit, esse assumenda eaque, vero sint nobis blanditiis repudiandae nesciunt dicta voluptatibus ea iste dolor eligendi ipsum. Totam quasi similique velit delectus debitis, sed dolore consectetur, est quia dignissimos iure cum ipsum, eligendi et.
+                </div>
+            </div>
+            <div class="category" id="cat__kawa">
+                <h2 class="category__header">Kawa</h2>
+                <div class="category__productImage" style="background-image: url('./img/offer/kawa.jpg')"></div>
+                <div class="category__productDescription">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo non, dolorem doloribus pariatur maxime fuga tempore velit, esse assumenda eaque, vero sint nobis blanditiis repudiandae nesciunt dicta voluptatibus ea iste dolor eligendi ipsum. Totam quasi similique velit delectus debitis, sed dolore consectetur, est quia dignissimos iure cum ipsum, eligendi et.
+                </div>
+            </div>
+            <div class="category" id="cat__sniadania">
+                <h2 class="category__header">Śniadania</h2>
+                <div class="category__productImage" style="background-image: url('./img/offer/sniadania.jpg')"></div>
+                <div class="category__productDescription">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo non, dolorem doloribus pariatur maxime fuga tempore velit, esse assumenda eaque, vero sint nobis blanditiis repudiandae nesciunt dicta voluptatibus ea iste dolor eligendi ipsum. Totam quasi similique velit delectus debitis, sed dolore consectetur, est quia dignissimos iure cum ipsum, eligendi et.
+                </div>
+            </div>
+        </section>
+
+
+        <script type="text/javascript" src="js/menuToggler.js"></script>
+        <script type="text/javascript" src="js/offer.js"></script>
     </body>
 </html>

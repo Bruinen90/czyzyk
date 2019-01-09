@@ -3,13 +3,25 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 65px;
+    position: relative;
+}
+
+.offer--folded {
+    @include animatedBottomBorder(0ms);
 }
 
 .offer__container {
     display: grid;
     grid-template: auto/ auto;
+    font-size: 30px;
+    transition: all .1s linear;
+}
 
+.offer__container--folded {
+    width: 80%;
+    grid-template: auto / 1fr 1fr;
+    font-size: 20px;
 }
 
 .offer__square {
@@ -21,12 +33,18 @@
     flex-direction: column;
 }
 
+.offer__square--folded {
+    flex-direction: row;
+    padding: 10px;
+}
+
 .offer__draw {
-    width: 50%;
+    width: 25%;
 }
 
 .offer_header {
-    font-size: 36px;
+    margin: 10px;
+    font-size: inherit;
     text-align: center;
 }
 
