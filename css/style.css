@@ -564,6 +564,7 @@ path {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .offer__square--folded {
@@ -586,8 +587,25 @@ path {
     height: 80vh;
   }
 
+  .offer--folded {
+    height: 300px;
+  }
+
+  .offer__container--folded {
+    display: flex;
+  }
+
   .offer__square {
     justify-content: flex-end;
+    font-size: 42px;
+  }
+
+  .offer__square--folded {
+    flex-direction: column;
+    font-size: 24px;
+  }
+  .offer__square--folded > .offer__draw {
+    width: 100px;
   }
 
   .offer__draw {
@@ -595,7 +613,7 @@ path {
   }
 
   .offer_header {
-    font-size: 42px;
+    font-size: inherit;
   }
 
   .offer__container {
@@ -642,6 +660,17 @@ path {
   margin: 20px 30px;
   font-family: "Thasadith", sans-serif;
   text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .category__productImage {
+    height: 300px;
+  }
+
+  .category__productDescription {
+    font-size: 20px;
+    max-width: 800px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
