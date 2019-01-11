@@ -1,0 +1,26 @@
+.cennik {
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+}
+
+.cennik__decoTypes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.cennik__decoType{
+    margin: 10px;
+}
+
+.cennik__price {
+    font-size: 40px;
+}
+
+.cennik__priceDescription {
+    font-size: 20px;
+}

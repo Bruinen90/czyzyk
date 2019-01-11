@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Czyżyk Ciastki & Co cukiernia, wypieki i śniadania Kraków, ul. Orlińskiego 5</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Libre+Baskerville:400,700|Thasadith" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="logo">
+            <object type="image/svg+xml" data="img/bird_in_parts.svg" class="onload__logo">SVG image failed!</object>
+        </div>
+
+        <div class="cover cover--hidden" onclick="toggleMenu()"></div>
+
+        <nav class="navBar">
+            <div class="navabar__container">
+                <div class="navbar__icons navbar__icons--desktop">
+                    <object
+                        type="image/svg+xml"
+                        data="./img/icons/icon_facebook.svg"
+                        class="socialIcon"
+                        onclick="console.log('miau')"
+                        href="https://www.facebook.com/czyzykpiekarniakawiarnia/"
+                    >
+                      Znajdź nas na Facebooku
+                    </object>
+                    <object
+                        type="image/svg+xml"
+                        data="./img/icons/icon_instagram.svg"
+                        class="socialIcon"
+                    >
+                      Nasza galeria na Ingtaramie
+                    </object>
+                </div>
+
+                <div class="logoCaption">
+                    <a href="./index.html" class="logoCaption__coverLink"></a>
+                    <div class="logoCaption__main">Czyżyk</div>
+                    <div class="logoCaption__sub">Ciastki<br/>&Co</div>
+                </div>
+
+                <ul class="nav nav--hidden">
+                    <li class="nav__item">
+                        <a href="oferta.html" class="nav__link">
+                            Oferta
+                        </a>
+                    </li>
+                    <li class="nav__item nav__item--active">
+                        <a href="cennik.html" class="nav__link">
+                            Cennik
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="kontakt.html" class="nav__link">
+                            Kontakt
+                        </a>
+                    </li>
+                    <li class="nav__item nav__item--socials">
+                        <div class="navbar__icons navbar__icons--mobile navbar__icons--hidden">
+                            <object
+                                type="image/svg+xml"
+                                data="./img/icons/icon_facebook.svg"
+                                class="socialIcon"
+                                onclick="console.log('miau')"
+                                href="https://www.facebook.com/czyzykpiekarniakawiarnia/"
+                            >
+                              Znajdź nas na Facebooku
+                            </object>
+                            <object
+                                type="image/svg+xml"
+                                data="./img/icons/icon_instagram.svg"
+                                class="socialIcon"
+                            >
+                              Nasza galeria na Ingtaramie
+                            </object>
+                            <object
+                                type="image/svg+xml"
+                                data="./img/icons/icon_phone.svg"
+                                class="socialIcon"
+                            >
+                              Zadzwoń i zamów wypieki
+                            </object>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="menuToggler" onClick='toggleMenu()'>
+                    <div class="menuToggler__bar menuToggler__bar1"></div>
+                    <div class="menuToggler__bar menuToggler__bar2"></div>
+                    <div class="menuToggler__bar menuToggler__bar3"></div>
+                </div>
+
+            </div>
+        </nav>
+
+        <section class="cennik">
+            <label for="iloscOsob" class="form__description">Ilość osób</label>
+            <input type="number" class="form__number">
+            <input type="range" min="1" max="100" name="iloscOsob" class="form__range" />
+            <div class="cennik__decoTypes">
+                <div class="cennik__decoType" id="figurka">Figurka</div>
+                <div class="cennik__decoType" id="dekoracja_kwiatowa">Dekoracja kwiatowa</div>
+                <div class="cennik__decoType" id="slodycze">Słodycze</div>
+            </div>
+            <div class="form__priceContainer form__priceContainer--hidden" id="iloscFigurek">
+                <label for="iloscFigurek" class="form__description" >Ilość figurek</label>
+                <input type="number" class="form__number" value="1" min="1">
+            </div>
+
+            <div class="cennik__priceContainer">
+                <span class="cennik__priceDescription">
+                    Cena tortu:
+                </span>
+                <span class="cennik__price" id="cenaTortu">
+                    <!-- Place for cake price after it's set in input params - cennik.js file -->
+                </span>
+            </div>
+            <div class="cennik__priceContainer">
+                <span class="cennik__priceDescription">
+                    Średnica tortu:
+                </span>
+                <span class="cennik__price" id="cakeSize">
+                    <!-- Place for cake price after it's set in input params - cennik.js file -->
+                </span>
+            </div>
+        </section>
+
+
+        <script type="text/javascript" src="js/menuToggler.js"></script>
+        <script type="text/javascript" src="js/cennik.js"></script>
+    </body>
+</html>

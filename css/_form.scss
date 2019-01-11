@@ -1,0 +1,45 @@
+.form__number {
+    text-align: center;
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    border: 0;
+    border-top: .5px solid $color-dark;
+    border-bottom: .5px solid $color-dark;
+    font-size: 24px;
+    font-family: $basic-font;
+}
+
+.form__priceContainer--hidden {
+    display: none;
+}
+
+.form__range {
+    -webkit-appearance: none;
+    appearance: none;
+    height: .5px;
+    background: $color-dark;
+    outline: none;
+    margin: 20px 0;
+    width: 300px;
+}
+
+.form__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border: .5px solid $color-dark;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.form__range::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border: .5px solid $color-dark;
+  border-radius: 50%;
+  cursor: pointer;
+}

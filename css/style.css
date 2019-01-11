@@ -672,5 +672,77 @@ path {
     max-width: 800px;
   }
 }
+.cennik {
+  padding-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+}
+
+.cennik__decoTypes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.cennik__decoType {
+  margin: 10px;
+}
+
+.cennik__price {
+  font-size: 40px;
+}
+
+.cennik__priceDescription {
+  font-size: 20px;
+}
+
+.form__number {
+  text-align: center;
+  margin: 10px;
+  width: 60px;
+  height: 60px;
+  border: 0;
+  border-top: 0.5px solid #000;
+  border-bottom: 0.5px solid #000;
+  font-size: 24px;
+  font-family: "Amatic SC", cursive;
+}
+
+.form__priceContainer--hidden {
+  display: none;
+}
+
+.form__range {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 0.5px;
+  background: #000;
+  outline: none;
+  margin: 20px 0;
+  width: 300px;
+}
+
+.form__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border: 0.5px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.form__range::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border: 0.5px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=style.css.map */
