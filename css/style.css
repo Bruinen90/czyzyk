@@ -34,7 +34,7 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100px;
+  height: 80px;
   padding: 0 30px;
   position: relative;
   border-bottom: 0.5px solid #000;
@@ -77,6 +77,10 @@ a {
 }
 
 @media (min-width: 768px) {
+  .navBar {
+    height: 100px;
+  }
+
   .navabar__container {
     justify-content: space-between;
   }
@@ -280,37 +284,16 @@ path {
   display: none;
 }
 
-.onload__cover {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(255, 255, 255, 0.7);
-  z-index: 900;
-  display: none;
-}
-
-.onload__cover--animated {
-  display: block;
-  animation: removeBackground 1s 3s linear forwards;
-}
-
 .onload__logo {
-  z-index: 1000;
+  z-index: 100;
   margin-right: auto;
   height: auto;
   position: absolute;
-  top: -35px;
-  left: calc(50vw - 170px);
-  width: 200px;
-}
-
-.onload__logo--animated {
+  top: 5px;
   left: 0;
-  width: 60%;
-  top: 35vh;
-  animation: moveTheBird 1s 2s linear forwards;
+  right: 0;
+  margin: auto;
+  width: 60px;
 }
 
 @keyframes moveTheBird {
@@ -320,19 +303,9 @@ path {
     width: 200px;
   }
 }
-@keyframes removeBackground {
-  to {
-    opacity: 0;
-    z-index: -1;
-  }
-}
 @media (min-width: 768px) {
   .onload__logo {
-    top: -35px;
-  }
-
-  .onload__logo--animated {
-    top: 0;
+    width: 100px;
   }
 }
 .slider {
@@ -341,7 +314,7 @@ path {
 
 .slider__container {
   width: 100%;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 80px);
   position: relative;
   background-color: #fff;
 }
@@ -369,7 +342,7 @@ path {
   background-color: #fff;
   width: 100%;
   height: 100%;
-  opacity: 0.75;
+  opacity: 0.6;
 }
 
 .slider__title {
@@ -384,6 +357,10 @@ path {
 }
 
 @media (min-width: 768px) {
+  .slider__container {
+    height: calc(100vh - 100px);
+  }
+
   .slider__title {
     font-size: 72px;
   }
@@ -402,8 +379,8 @@ path {
   margin: auto;
   font-family: "Libre Baskerville", serif;
   z-index: 10;
-  width: 185px;
-  height: 170px;
+  width: 125px;
+  height: 120px;
   background-color: #fff;
   border: 0.5px solid #000;
   border-top: 0;
@@ -415,8 +392,8 @@ path {
   top: 0;
   left: 10.25px;
   content: " ";
-  width: 162.5px;
-  height: 160px;
+  width: 102.5px;
+  height: 110px;
   background-color: transparent;
   border: 0.5px solid #000;
   border-top: 0;
@@ -440,12 +417,16 @@ path {
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: 1000;
+  z-index: 9;
 }
 
 .logoCaption__main {
-  font-size: 28px;
-  z-index: 100;
+  font-size: 18px;
+  z-index: 10;
+}
+
+.logoCaption__sub {
+  font-size: 12px;
 }
 
 @keyframes slideIn {
@@ -459,6 +440,30 @@ path {
   }
   to {
     transform: translateY(0px);
+  }
+}
+@media (min-width: 768px) {
+  .logoCaption {
+    padding-top: 75px;
+    top: -180px;
+    width: 185px;
+    height: 170px;
+    padding-bottom: 20px;
+    animation: slideIn 0s linear forwards;
+  }
+  .logoCaption::after {
+    left: 10.25px;
+    content: " ";
+    width: 162.5px;
+    height: 160px;
+  }
+
+  .logoCaption__main {
+    font-size: 28px;
+  }
+
+  .logoCaption__sub {
+    font-size: 18px;
   }
 }
 .map {
@@ -689,6 +694,7 @@ path {
 
 .cennik__decoType {
   margin: 10px;
+  cursor: pointer;
 }
 
 .cennik__price {

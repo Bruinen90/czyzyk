@@ -1,34 +1,13 @@
-.onload__cover {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255, .7);
-    z-index: 900;
-    display: none;
-}
-
-.onload__cover--animated {
-    display: block;
-    animation: removeBackground 1s 3s linear forwards;
-}
-
 .onload__logo {
-    z-index: 1000;
+    z-index: 100;
     margin-right: auto;
     height: auto;
     position: absolute;
-    top: -35px;
-    left: calc(50vw - 170px);
-    width: 200px;
-}
-
-.onload__logo--animated {
+    top: 5px;
     left: 0;
-    width: 60%;
-    top: 35vh;
-    animation: moveTheBird 1s 2s linear forwards;
+    right: 0;
+    margin: auto;
+    width: 60px;
 }
 
 @keyframes moveTheBird {
@@ -39,19 +18,8 @@
     }
 }
 
-@keyframes removeBackground {
-    to {
-        opacity: 0;
-        z-index: -1;
-    }
-}
-
 @media (min-width: $desktop) {
     .onload__logo {
-        top: -35px;
-    }
-
-    .onload__logo--animated {
-        top: 0;
+        width: 100px;
     }
 }
