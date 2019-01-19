@@ -23,10 +23,14 @@ const update = (people, extra = 0) => {
             size: 'tort piętrowy'
             break;
     }
+
+    const cakeImage = document.querySelector('.cennik__cakeImage');
     if(size <= 22) {
         cakeSize.innerHTML = size + ' cm';
+        cakeImage.src='img/offer/cake_layers_1.svg';
     } else {
         cakeSize.innerHTML = 'tort piętrowy';
+        cakeImage.src='img/offer/cake_layers_2.svg';
     }
 
 }
@@ -58,7 +62,10 @@ decoTypes.forEach(decoType => {
         deco = decoType.id;
         const currContainer = document.querySelector(`#${deco}`);
         currContainer.querySelector('img').src = currContainer.querySelector('img').src.slice(0, -4)+'_active.svg';
-        if(deco === 'figurka') {
+        const decoVis = document.querySelector(`#${deco}_vis`);
+        console.log(deco)
+        decoVis.classList.remove('cennik__decoVisualization--hidden')
+        if(deco === 'miniature') {
             minCountCont.classList.remove('form__priceContainer--hidden')
         } else {
             minCountCont.classList.add('form__priceContainer--hidden');
@@ -71,6 +78,10 @@ const disactiveDecos = () => {
     const allDecos = document.querySelectorAll('.cennik__decoMiniature');
     allDecos.forEach(decoIcon => {
         decoIcon.src = decoIcon.src.replace('_active', '');
+    });
+    const allVis = document.querySelectorAll('.cennik__decoVisualization');
+    allVis.forEach(vis => {
+        vis.classList.add('cennik__decoVisualization--hidden')
     })
 }
 

@@ -99,19 +99,27 @@
         </nav>
 
         <section class="cennik">
-            <label for="iloscOsob" class="form__description">Ilość osób</label>
-            <input type="number" class="form__number">
-            <input type="range" min="1" max="100" name="iloscOsob" class="form__range" />
+            <div class="cennik__cakeContainer">
+                <img src="img/prices/floral_active.svg" alt="" class="cennik__decoVisualization" id="floral_vis">
+                <img src="img/prices/miniature_active.svg" alt="" class="cennik__decoVisualization cennik__decoVisualization--hidden" id="miniature_vis">
+                <img src="img/prices/candies_active.svg" alt="" class="cennik__decoVisualization cennik__decoVisualization--hidden" id="candies_vis">
+                <img src="img/offer/cake_layers_1.svg" alt="" class="cennik__cakeImage">
+            </div>
+            <div class="form__peopleCount">
+                <label for="peopleCount" class="form__description">Ilość osób</label>
+                <input type="number" class="form__number">
+            </div>
+            <input type="range" min="1" max="100" name="peopleCount" class="form__range" />
             <div class="cennik__decoTypes">
-                <div class="cennik__decoType" id="figurka">
+                <div class="cennik__decoType" id="miniature">
                     <img src="img/prices/miniature.svg" alt="" class="cennik__decoMiniature">
                     Figurka
                 </div>
-                <div class="cennik__decoType" id="dekoracja_kwiatowa">
+                <div class="cennik__decoType" id="floral">
                     <img src="img/prices/floral_active.svg" alt="" class="cennik__decoMiniature">
                     Dekoracja kwiatowa
                 </div>
-                <div class="cennik__decoType" id="slodycze">
+                <div class="cennik__decoType" id="candies">
                     <img src="img/prices/candies.svg" alt="" class="cennik__decoMiniature">
                     Słodycze
                 </div>
