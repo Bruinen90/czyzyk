@@ -16,30 +16,48 @@
 
 .form__range {
     -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     height: .5px;
-    background: $color-dark;
+    background-color: $color-dark;
     outline: none;
     margin: 20px 0;
     width: 300px;
 }
 
 .form__range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  background: #fff;
-  border: .5px solid $color-dark;
-  border-radius: 50%;
-  cursor: pointer;
+    -webkit-appearance: none;
+    width: 40px;
+    height: 40px;
+    background: url('../img/cake.svg');
+    cursor: pointer;
 }
 
 .form__range::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  background: #fff;
-  border: .5px solid $color-dark;
-  border-radius: 50%;
-  cursor: pointer;
+    -moz-appearance: none;
+    width: 40px;
+    height: 40px;
+    background: url('../img/cake.svg');
+    border: 0px solid transparent;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+@supports (-ms-ime-align:auto) {
+    .form__range {
+        appearance: scrollbar;
+        height: 50px;
+        background: transparent;
+        cursor: pointer;
+        &:focus {
+            outline: none;
+        }
+        &::after {
+            content:  " ";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: #000;
+        }
+    }
 }

@@ -54,7 +54,10 @@ const minCountCont = document.querySelector('#iloscFigurek');
 const decoTypes = document.querySelectorAll('.cennik__decoType');
 decoTypes.forEach(decoType => {
     decoType.addEventListener('click', ()=> {
+        disactiveDecos();
         deco = decoType.id;
+        const currContainer = document.querySelector(`#${deco}`);
+        currContainer.querySelector('img').src = currContainer.querySelector('img').src.slice(0, -4)+'_active.svg';
         if(deco === 'figurka') {
             minCountCont.classList.remove('form__priceContainer--hidden')
         } else {
@@ -62,6 +65,14 @@ decoTypes.forEach(decoType => {
         }
     })
 })
+
+
+const disactiveDecos = () => {
+    const allDecos = document.querySelectorAll('.cennik__decoMiniature');
+    allDecos.forEach(decoIcon => {
+        decoIcon.src = decoIcon.src.replace('_active', '');
+    })
+}
 
 let minCount = 1;
 const inputMin = minCountCont.querySelector('input');
