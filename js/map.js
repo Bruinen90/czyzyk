@@ -345,13 +345,18 @@ function initMap() {
 
     const map = new google.maps.Map(document.querySelector('.map'), mapParams);
 
+    let markerSize = new google.maps.Size(75, 125);
+    if(window.innerWidth < 769) {
+        markerSize = new google.maps.Size(60, 100)
+    }
+
     const marker = new google.maps.Marker({
         position: new google.maps.LatLng(50.080964, 20.003185),
         map: map,
         animation: google.maps.Animation.DROP,
         icon: {
             url: './img/map_pin.svg',
-            scaledSize: new google.maps.Size(75, 125),
+            scaledSize: markerSize,
         }
     });
 

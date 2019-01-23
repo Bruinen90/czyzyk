@@ -3,13 +3,16 @@
     margin: 10px;
     width: 60px;
     height: 60px;
-    // border: 0;
-    // border-top: .5px solid $color-dark;
-    // border-bottom: .5px solid $color-dark;
     border: .5px solid $color-dark;
     border-radius: 50%;
     font-size: 24px;
     font-family: $basic-font;
+}
+
+.form__number::-webkit-outer-spin-button,
+.form__number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .form__priceContainer--hidden {
