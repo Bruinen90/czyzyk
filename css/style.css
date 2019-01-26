@@ -55,7 +55,7 @@ a {
   bottom: 0;
   width: 100%;
   background-color: #000;
-  height: 0.5px;
+  height: 1px;
   transform: scaleX(0);
   animation: stretchLine 1s 3500ms forwards;
 }
@@ -169,7 +169,7 @@ path {
   bottom: 0;
   width: 100%;
   background-color: #000;
-  height: 0.5px;
+  height: 1px;
   transform: scaleX(0);
   animation: stretchLine 1s 0ms forwards;
 }
@@ -617,7 +617,7 @@ path {
   bottom: 0;
   width: 100%;
   background-color: #000;
-  height: 0.5px;
+  height: 1px;
   transform: scaleX(0);
   animation: stretchLine 1s 0ms forwards;
 }
@@ -755,16 +755,45 @@ path {
     max-width: 1200px;
   }
 }
-.cennik {
+.prices {
   padding-top: 100px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.prices__productContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 24px;
+  border: 0.5px solid #000;
+  border-left: 0;
+  border-right: 0;
+  padding: 30px 0px;
+  position: relative;
+}
+.prices__productContainer::after {
+  content: " ";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  border: 0.5px solid #000;
+  border-left: 0;
+  border-right: 0;
+  z-index: -1;
 }
 
-.cennik__cakeContainer {
+.prices__header {
+  font-size: 36px;
+  text-align: center;
+  font-weight: lighter;
+  margin-top: 0;
+}
+
+.prices__cakeContainer {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -773,13 +802,13 @@ path {
   padding: 20px;
 }
 
-.cennik__decoVisualization {
+.prices__decoVisualization {
   width: 40px;
   transform: translateY(-100%);
   animation: drop_deco 1.5s ease-out forwards;
 }
 
-.cennik__decoVisualization--hidden {
+.prices__decoVisualization--hidden {
   display: none;
 }
 
@@ -797,17 +826,17 @@ path {
     transform: translateY(-10%);
   }
 }
-.cennik__cakeImage {
+.prices__cakeImage {
   width: 150px;
 }
 
-.cennik__decoTypes {
+.prices__decoTypes {
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 
-.cennik__decoType {
+.prices__decoType {
   margin: 10px;
   cursor: pointer;
   display: flex;
@@ -816,34 +845,62 @@ path {
   align-items: center;
 }
 
-.cennik__decoMiniature {
+.prices__decoMiniature {
   width: 40px;
 }
 
-.cennik__price {
+.prices__price {
   font-size: 40px;
 }
 
-.cennik__priceDescription {
+.prices__priceDescription {
   font-size: 20px;
 }
 
+.prices__buttons {
+  margin-top: 30px;
+}
+
 @media (min-width: 768px) {
-  .cennik__cakeContainer {
+  .prices__productContainer {
+    margin: 50px;
+    padding: 30px 100px;
+    position: relative;
+    border: 1px solid #000;
+    background-color: transparent;
+  }
+  .prices__productContainer::after {
+    content: " ";
+    position: absolute;
+    background-color: #fff;
+    top: -12px;
+    left: -12px;
+    right: -12px;
+    bottom: -12px;
+    border: 1px solid #000;
+    background-color: transparent;
+    z-index: -1;
+  }
+
+  .prices__cakeContainer {
     height: 220px;
     padding: 50px;
   }
 
-  .cennik__decoVisualization {
+  .prices__decoVisualization {
     width: 50px;
   }
 
-  .cennik__cakeImage {
+  .prices__cakeImage {
     width: 200px;
   }
 
-  .cennik__decoMiniature {
+  .prices__decoMiniature {
     width: 50px;
+  }
+
+  .prices__buttons {
+    display: flex;
   }
 }
 .form__number {
@@ -1228,6 +1285,10 @@ path {
     max-width: 280px;
     margin: 2rem;
   }
+
+  .footer__socialLink--phone {
+    display: none;
+  }
 }
 .draw {
   fill: transparent;
@@ -1248,6 +1309,68 @@ path {
   to {
     stroke-dashoffset: 0;
   }
+}
+.button {
+  width: 150px;
+  height: 35px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  cursor: pointer;
+  position: relative;
+  border: 0.5px solid #000;
+  background-color: #fff;
+}
+.button::after {
+  content: " ";
+  position: absolute;
+  background-color: #fff;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 0.5px solid #000;
+  background-color: #fff;
+  z-index: -1;
+}
+
+.button--black {
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  border: 0.5px solid #fff;
+  background-color: #545454;
+}
+.button--black::after {
+  content: " ";
+  position: absolute;
+  background-color: #fff;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 0.5px solid #fff;
+  background-color: #545454;
+  z-index: -1;
+}
+
+.button__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button__icon {
+  font-size: 0.8em;
+  margin-left: 10px;
+  margin-right: -0.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */

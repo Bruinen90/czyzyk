@@ -24,7 +24,7 @@ const update = (people, extra = 0) => {
             break;
     }
 
-    const cakeImage = document.querySelector('.cennik__cakeImage');
+    const cakeImage = document.querySelector('.prices__cakeImage');
     if(size <= 22) {
         cakeSize.innerHTML = size + ' cm';
         cakeImage.src='img/offer/cake_layers_1.svg';
@@ -55,7 +55,7 @@ number.addEventListener('input', ()=> {
 
 let deco = 'dekoracja_kwiatowa';
 const minCountCont = document.querySelector('#iloscFigurek');
-const decoTypes = document.querySelectorAll('.cennik__decoType');
+const decoTypes = document.querySelectorAll('.prices__decoType');
 decoTypes.forEach(decoType => {
     decoType.addEventListener('click', ()=> {
         disactiveDecos();
@@ -64,7 +64,7 @@ decoTypes.forEach(decoType => {
         currContainer.querySelector('img').src = currContainer.querySelector('img').src.slice(0, -4)+'_active.svg';
         const decoVis = document.querySelector(`#${deco}_vis`);
         console.log(deco)
-        decoVis.classList.remove('cennik__decoVisualization--hidden')
+        decoVis.classList.remove('prices__decoVisualization--hidden')
         if(deco === 'miniature') {
             minCountCont.classList.remove('form__priceContainer--hidden')
         } else {
@@ -75,13 +75,13 @@ decoTypes.forEach(decoType => {
 
 
 const disactiveDecos = () => {
-    const allDecos = document.querySelectorAll('.cennik__decoMiniature');
+    const allDecos = document.querySelectorAll('.prices__decoMiniature');
     allDecos.forEach(decoIcon => {
         decoIcon.src = decoIcon.src.replace('_active', '');
     });
-    const allVis = document.querySelectorAll('.cennik__decoVisualization');
+    const allVis = document.querySelectorAll('.prices__decoVisualization');
     allVis.forEach(vis => {
-        vis.classList.add('cennik__decoVisualization--hidden')
+        vis.classList.add('prices__decoVisualization--hidden')
     })
 }
 

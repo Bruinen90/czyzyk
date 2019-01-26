@@ -1,13 +1,42 @@
-.cennik {
+.prices {
     padding-top: 100px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.prices__productContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 24px;
+    border: .5px solid $color-dark;
+    border-left: 0;
+    border-right: 0;
+    padding: 30px 0px;
+    position: relative;
+    &::after {
+        content: " ";
+        position: absolute;
+        top: -10px;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+        border: .5px solid $color-dark;
+        border-left: 0;
+        border-right: 0;
+        z-index: -1;
+    }
 }
 
-.cennik__cakeContainer {
+.prices__header {
+    font-size: 36px;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 0;
+}
+
+.prices__cakeContainer {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -16,13 +45,13 @@
     padding: 20px;
 }
 
-.cennik__decoVisualization {
+.prices__decoVisualization {
     width: 40px;
     transform: translateY(-100%);
     animation: drop_deco 1.5s ease-out forwards;
 }
 
-.cennik__decoVisualization--hidden {
+.prices__decoVisualization--hidden {
     display: none;
 }
 
@@ -33,17 +62,17 @@
     90% {transform: translateY(-10%);}
 }
 
-.cennik__cakeImage {
+.prices__cakeImage {
     width: 150px;
 }
 
-.cennik__decoTypes {
+.prices__decoTypes {
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
-.cennik__decoType{
+.prices__decoType{
     margin: 10px;
     cursor: pointer;
     display: flex;
@@ -52,33 +81,47 @@
     align-items: center;
 }
 
-.cennik__decoMiniature {
+.prices__decoMiniature {
     width: 40px;
 }
 
-.cennik__price {
+.prices__price {
     font-size: 40px;
 }
 
-.cennik__priceDescription {
+.prices__priceDescription {
     font-size: 20px;
 }
 
+.prices__buttons {
+    margin-top: 30px;
+}
+
 @media (min-width: $desktop) {
-    .cennik__cakeContainer {
+    .prices__productContainer {
+        margin: 50px;
+        padding: 30px 100px;
+        @include doubleBorder;
+    }
+
+    .prices__cakeContainer {
         height: 220px;
         padding: 50px;
     }
 
-    .cennik__decoVisualization {
+    .prices__decoVisualization {
         width: 50px;
     }
 
-    .cennik__cakeImage {
+    .prices__cakeImage {
         width: 200px;
     }
 
-    .cennik__decoMiniature {
+    .prices__decoMiniature {
         width: 50px;
+    }
+
+    .prices__buttons {
+        display: flex;
     }
 }

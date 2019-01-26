@@ -27,7 +27,7 @@ a {
         bottom: 0;
         width: 100%;
         background-color: $color-dark;
-        height: .5px;
+        height: 1px;
         transform: scaleX(0);
         animation: stretchLine 1s $delay forwards;
     }
@@ -66,6 +66,21 @@ a {
 @mixin fadeInAfterBird {
     opacity: 0;
     animation: fadeIn 1s 4s linear forwards;
+}
+
+@mixin doubleBorder($border-color: $color-dark, $border-width: 1px, $padding: 12px, $background-color: transparent) {
+    position: relative;
+    border: $border-width solid $border-color;
+    background-color: $background-color;
+    &::after {
+        content: " ";
+        position: absolute;
+        background-color: #fff;
+        top: -$padding; left: -$padding; right: -$padding; bottom: -$padding;
+        border: $border-width solid $border-color;
+        background-color: $background-color;
+        z-index: -1;
+    }
 }
 
 @keyframes fadeIn {
