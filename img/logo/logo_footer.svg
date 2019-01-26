@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="../../css/style.css" ?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg3713"
+   width="222.21053"
+   height="153.05264"
+   viewBox="0 0 222.21053 153.05264"
+   sodipodi:docname="bird_in_parts.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata3719">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3717" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="3840"
+     inkscape:window-height="2066"
+     id="namedview3715"
+     showgrid="false"
+     inkscape:zoom="3.3587572"
+     inkscape:cx="29.812597"
+     inkscape:cy="82.761307"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3713" />
+
+  <path
+     class="draw draw--white body"
+     d="m 81.26316,106.00001 c 0,0 23.36842,13.68421 53.36842,13.36842 30,-0.31579 46.93454,-13.17186 46.93454,-13.17186 0,0 43.69704,-30.51236 37.06546,-72.40709 C 212,-8.10526 173.26316,1.26316 173.26316,1.26316 c 0,0 -27.78948,3.89474 -25.78948,39.05263 2,35.1579 -36.21053,60.84211 -124.63157,63.26316 C 36,98.42106 147.47368,40.63158 147.47368,40.63158"
+     id="path4546"
+     inkscape:connector-curvature="0" />
+  <path
+     class="draw"
+     d="M 22.84211,103.57895 0,114.52632 c 0,0 70.52632,10.63158 103.47368,-23.47369"
+     id="path4557"
+     inkscape:connector-curvature="0" />
+  <path
+     class="draw draw--white left_leg"
+     d="m 95.39474,112.28948 23.65789,32.3421 -24.10526,-0.10526"
+     id="path4559"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccc" />
+  <path
+     class="draw draw--white rigth_leg"
+     d="m 126.92183,119.06431 25.18343,26.9357"
+     id="path4563"
+     inkscape:connector-curvature="0" />
+  <path
+     class="draw draw--white peak"
+     d="m 202.73684,6 19.47368,-6 -9.05263,17.26316"
+     id="path4565"
+     inkscape:connector-curvature="0" />
+  <path
+     class="draw draw--white pawns"
+     d="m 172.31579,146.84211 -53.26316,-2.21053 28.63158,8.42106"
+     id="path4561"
+     inkscape:connector-curvature="0" />
+  <ellipse
+     class="draw draw--white eye"
+     id="path4548"
+     cx="189.52634"
+     cy="16.789476"
+     rx="5.7368422"
+     ry="5.6315789" />
+  <script
+     type="text/javascript"
+     >
+            const elements = document.querySelectorAll('.draw');
+            let prevDelay = 0;
+            elements.forEach((element, index) => {
+                element.style.strokeDasharray = element.getTotalLength()*1.05;
+                element.style.strokeDashoffset = element.getTotalLength()*1.05;
+                element.style.animationDuration = element.getTotalLength()*4 + 'ms';
+                element.style.animationDelay =  prevDelay + 'ms';
+                prevDelay += element.getTotalLength()*2.83;
+            })
+        </script>
+
+    <a xmlns="http://www.w3.org/2000/svg" id="anchor" xlink:href="../index.html" xmlns:xlink="http://www.w3.org/1999/xlink" target="_top">
+    <rect x="0" y="0" width="100%" height="100%" fill-opacity="0"/>
+    </a>
+</svg>

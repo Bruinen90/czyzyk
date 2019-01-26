@@ -54,12 +54,25 @@
 }
 
 .logoCaption__main {
+    font-family: $logo-font;
     font-size: 18px;
     z-index: 8;
 }
 
+.logoCaption__main--small {
+    font-size: 14px;
+    margin: 0;
+}
+
 .logoCaption__sub {
+    font-family: $logo-font;
     font-size: 12px;
+}
+
+.logoCaption__sub--small {
+    font-size: 10px;
+    margin: 0;
+    text-align: center;
 }
 
 @keyframes slideIn {
@@ -93,7 +106,15 @@
         font-size: 28px;
     }
 
+    .logoCaption__main--small {
+        font-size: 16px;
+    }
+
     .logoCaption__sub {
         font-size: 18px;
+    }
+
+    .logoCaption__sub--small {
+        font-size: 14px;
     }
 }

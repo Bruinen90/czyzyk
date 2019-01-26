@@ -1,0 +1,84 @@
+.products {
+    font-family: $plain-text-font;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products__product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.products__productImage {
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: .5px solid $color-dark;
+    border-bottom: .5px solid $color-dark;
+}
+
+.products__productDescription {
+    padding: 30px;
+}
+
+.products__header {
+    font-family: $basic-font;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+@media (min-width: $desktop) {
+    .products {
+        max-width: 1200px;
+    }
+
+    .products__product {
+        flex-direction: row;
+        .products__productDescription::after {
+                content: " ";
+                position: absolute;
+                left: -30px;
+                transform: translateY(-50%);
+                border-top: 30px solid transparent;
+                border-bottom: 30px solid transparent;
+                border-right:30px solid #fff;
+                top: 50%;
+        }
+        &:nth-child(2n) {
+            flex-direction: row-reverse;
+            .products__productDescription::after {
+                display: none;
+            }
+            .products__productDescription::before {
+                    content: " ";
+                    position: absolute;
+                    right: -30px;
+                    transform: translateY(-50%);
+                    border-top: 30px solid transparent;
+                    border-bottom: 30px solid transparent;
+                    border-left:30px solid #fff;
+                    top: 50%;
+            }
+        }
+    }
+
+    .products__productImage {
+        width: 50%;
+        height: 500px;
+        border: 0;
+    }
+
+    .products__productDescription {
+        width: 50%;
+        font-size: 20px;
+        position: relative;
+        text-align: justify;
+    }
+}

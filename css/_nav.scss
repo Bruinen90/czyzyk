@@ -76,7 +76,7 @@
         margin-left: 20px;
         font-size: 28px;
         position: relative;
-        @include animatedLinkBorder;
+        @include animatedLinkBorder($color-dark);
     }
 
     .nav__item--active {

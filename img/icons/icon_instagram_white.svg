@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="15.345833mm"
+   height="15.345833mm"
+   viewBox="0 0 15.345833 15.345833"
+   version="1.1"
+   id="svg839"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="icon_instagram_white.svg">
+  <defs
+     id="defs833" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="-42.417761"
+     inkscape:cy="64.929623"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="3840"
+     inkscape:window-height="2066"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata836">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-93.624702,-190.29732)">
+    <g
+       onclick="window.open('https://www.instagram.com/czyzyk.kawiarnia/', '_blank')"
+       id="Page-1"
+       class="socialIcon__g"
+       transform="matrix(0.26458333,0,0,0.26458333,93.360119,190.03274)"
+       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:2.00000003;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+      <g
+         transform="translate(1,1)"
+         class="socialIcon__path"
+         id="Instagram"
+         style="stroke-width:2.00000003;stroke-miterlimit:4;stroke-dasharray:none;stroke:#ffffff;stroke-opacity:1">
+        <path
+           id="Stroke-107"
+           d="M 54,58 H 4 C 1.791,58 0,56.209 0,54 V 4 C 0,1.791 1.791,0 4,0 h 50 c 2.209,0 4,1.791 4,4 v 50 c 0,2.209 -1.791,4 -4,4 z"
+           class="socialIcon__backgroundPath socialIcon__backgroundPath--instagram"
+           inkscape:connector-curvature="0"
+           style="stroke-linejoin:round;stroke-width:2.00000003;stroke-miterlimit:4;stroke-dasharray:none;stroke:#ffffff;stroke-opacity:1" />
+        <path
+           id="Stroke-9"
+           d="m 36.7375,29.0458 c 0,-4.237 -3.442,-7.675 -7.692,-7.675 -4.245,0 -7.691,3.438 -7.691,7.675 0,4.237 3.446,7.675 7.691,7.675 4.25,0 7.692,-3.438 7.692,-7.675 z m 7.263,-10.046 v -3.75 c 0,-0.691 -0.563,-1.25 -1.25,-1.25 h -3.75 c -0.692,0 -1.25,0.559 -1.25,1.25 v 3.75 c 0,0.688 0.558,1.25 1.25,1.25 h 3.75 c 0.687,0 1.25,-0.562 1.25,-1.25 z m 1.25,25 v -18.75 h -5 c 0.808,0.963 0.962,2.683 0.962,3.796 0,6.692 -5.458,12.137 -12.167,12.137 -6.708,0 -12.166,-5.445 -12.166,-12.137 0,-1.113 0.221,-2.862 0.871,-3.796 h -5 v 18.75 c 0,0.688 0.558,1.25 1.25,1.25 h 30 c 0.687,0 1.25,-0.562 1.25,-1.25 z m 3.75,-30.258 v 30.512 c 0,2.621 -2.13,4.746 -4.755,4.746 h -30.491 c -2.625,0 -4.754,-2.125 -4.754,-4.746 v -30.512 c 0,-2.621 2.129,-4.742 4.754,-4.742 h 30.491 c 2.625,0 4.755,2.121 4.755,4.742 z"
+           inkscape:connector-curvature="0"
+           style="stroke-width:2.00000003;stroke-miterlimit:4;stroke-dasharray:none;stroke:#ffffff;stroke-opacity:1" />
+      </g>
+    </g>
+  </g>
+</svg>
