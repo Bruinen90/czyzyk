@@ -11,8 +11,12 @@
 }
 
 .category__header {
-    font-size: 48px;
-    margin: 15px;
+    font-size: 42px;
+    margin: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .75);
+    text-align: center;
+    font-weight: normal;
 }
 
 .category__productContainer {
@@ -24,13 +28,15 @@
 
 .category__cateogryImage {
     width: 100%;
-    height: 150px;
-    border: 0.5px solid $color-dark;
+    height: 200px;
     border-left: 0;
     border-right: 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .category__categoryDescription {
@@ -46,7 +52,7 @@
 
     .category__header {
         font-size: 60px;
-        margin: 30px;
+        margin: 0px;
     }
 
     .category__categoryDescription {

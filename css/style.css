@@ -631,6 +631,7 @@ path {
 
 .offer__container--folded {
   width: 80%;
+  max-width: 1000px;
   grid-template: auto/1fr 1fr;
   font-size: 20px;
 }
@@ -687,7 +688,7 @@ path {
   }
 
   .offer__draw {
-    width: 70%;
+    width: 60%;
   }
 
   .offer_header {
@@ -712,8 +713,12 @@ path {
 }
 
 .category__header {
-  font-size: 48px;
-  margin: 15px;
+  font-size: 42px;
+  margin: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  font-weight: normal;
 }
 
 .category__productContainer {
@@ -725,13 +730,15 @@ path {
 
 .category__cateogryImage {
   width: 100%;
-  height: 150px;
-  border: 0.5px solid #000;
+  height: 200px;
   border-left: 0;
   border-right: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .category__categoryDescription {
@@ -747,7 +754,7 @@ path {
 
   .category__header {
     font-size: 60px;
-    margin: 30px;
+    margin: 0px;
   }
 
   .category__categoryDescription {
@@ -908,7 +915,7 @@ path {
   margin: 10px;
   width: 60px;
   height: 60px;
-  border: 0.5px solid #000;
+  border: 1px solid #000;
   border-radius: 50%;
   font-size: 24px;
   font-family: "Amatic SC", cursive;
@@ -928,7 +935,7 @@ path {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  height: 0.5px;
+  height: 1px;
   background-color: #000;
   outline: none;
   margin: 20px 0;
@@ -1274,6 +1281,10 @@ path {
 }
 
 @media (min-width: 768px) {
+  .footer {
+    margin-top: 100px;
+  }
+
   .footer__container {
     flex-direction: row;
     justify-content: center;

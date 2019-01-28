@@ -20,6 +20,7 @@
 
 .offer__container--folded {
     width: 80%;
+    max-width: 1000px;
     grid-template: auto / 1fr 1fr;
     font-size: 20px;
 }
@@ -76,7 +77,7 @@
     }
 
     .offer__draw {
-        width: 70%;
+        width: 60%;
     }
 
     .offer_header {
