@@ -142,8 +142,8 @@ path {
 }
 @media (min-width: 768px) {
   .socialIcon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
   }
 }
@@ -1382,6 +1382,132 @@ path {
   font-size: 0.8em;
   margin-left: 10px;
   margin-right: -0.8rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__hero {
+  width: 100%;
+  height: 33vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__hero--shop {
+  background-image: url("../img/photos/shop.jpg");
+}
+
+.about__hero--team {
+  background-image: url("../img/photos/team.jpg");
+}
+
+.about__header {
+  font-size: 48px;
+  font-weight: normal;
+  background-color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  width: 100%;
+}
+
+.about__description {
+  max-width: 1000px;
+  font-family: "Thasadith", sans-serif;
+  text-align: justify;
+  padding: 30px;
+}
+
+.about__film {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__smallImg {
+  display: none;
+  width: 100vw;
+  margin: 10px -30px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+}
+
+.about__smallImg--mobile {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .about__hero {
+    height: 45vh;
+  }
+
+  .about__header {
+    font-size: 72px;
+  }
+
+  .about__description {
+    font-size: 22px;
+    font-weight: lighter;
+  }
+
+  .about__smallImg {
+    display: block;
+    height: 300px;
+    width: 300px;
+    border: 1px solid #000;
+    margin: auto;
+  }
+}
+.team {
+  display: grid;
+  grid-template: 1fr/auto;
+  max-width: 1280px;
+}
+
+.team__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  padding: 30px;
+  padding-top: 20px;
+  text-align: justify;
+  border: 1px solid #777;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+.team__name {
+  font-size: 24px;
+  margin: 10px;
+}
+
+.team__text {
+  font-family: "Thasadith", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .team {
+    grid-template: 1fr/1fr 1fr 1fr;
+  }
+
+  .team__text {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

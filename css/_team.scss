@@ -1,0 +1,44 @@
+.team {
+    display: grid;
+    grid-template: 1fr / auto;
+    max-width: 1280px;
+}
+
+.team__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 30px;
+    padding-top: 20px;
+    text-align: justify;
+    border: 1px solid #777;
+    box-shadow: 0px 10px 15px rgba(0,0,0,.1);
+}
+
+.team__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+.team__name {
+    font-size: 24px;
+    margin: 10px;
+}
+
+.team__text {
+    font-family: $plain-text-font;
+}
+
+@media (min-width: $desktop) {
+    .team {
+        grid-template: 1fr / 1fr 1fr 1fr;
+    }
+
+    .team__text {
+        font-size: 18px;
+    }
+}
