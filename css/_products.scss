@@ -34,6 +34,31 @@
     margin-bottom: 10px;
 }
 
+.products__readMore {
+    margin-top: 20px;
+    margin-right: 10px;
+    font-weight: bold;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.products__readMoreLink:hover > .products__icon {
+    animation: readMore .5s infinite alternate;
+}
+
+.products__icon {
+    width: 30px;
+    margin-left: 10px;
+}
+
+@keyframes readMore {
+    to {
+        transform: translateX(5px);
+    }
+}
+
 @media (min-width: $desktop) {
     .products {
         max-width: 1200px;
@@ -80,5 +105,9 @@
         font-size: 20px;
         position: relative;
         text-align: justify;
+    }
+
+    .products__icon {
+        width: 40px;
     }
 }

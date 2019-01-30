@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Czyżyk Ciastki & Co cukiernia, wypieki i śniadania Kraków, ul. Orlińskiego 5</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Libre+Baskerville:400,700|Thasadith" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="logo">
+            <object type="image/svg+xml" data="img/logo/logo.svg" class="logo__image">
+                <img src="img/logo/logo.png" alt="Czyżyk cukiernia Orlińskiego 5" class="logo__image">
+            </object>
+        </div>
+
+        <div class="cover cover--hidden" onclick="toggleMenu()"></div>
+
+        <nav class="navBar">
+            <div class="navabar__container">
+                <div class="navbar__icons navbar__icons--desktop">
+                    <object
+                        type="image/svg+xml"
+                        data="./img/icons/icon_facebook.svg"
+                        class="socialIcon"
+                        onclick="console.log('miau')"
+                        href="https://www.facebook.com/czyzykpiekarniakawiarnia/"
+                    >
+                      Znajdź nas na Facebooku
+                    </object>
+                    <object
+                        type="image/svg+xml"
+                        data="./img/icons/icon_instagram.svg"
+                        class="socialIcon"
+                    >
+                      Nasza galeria na Ingtaramie
+                    </object>
+                    <object
+                        type="image/svg+xml"
+                        data="./img/icons/icon_phone.svg"
+                        class="socialIcon"
+                    >
+                      Zadzwoń i zamów
+                    </object>
+                </div>
+
+                <div class="logoCaption">
+                    <a href="./index.html" class="logoCaption__coverLink"></a>
+                    <div class="logoCaption__main">Czyżyk</div>
+                    <div class="logoCaption__sub">Ciastki<br/>&Co</div>
+                </div>
+
+                <ul class="nav nav--hidden">
+                    <li class="nav__item">
+                        <a href="oferta.html" class="nav__link">
+                            Oferta
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="o_nas.html" class="nav__link">
+                            O nas
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="kontakt.html" class="nav__link">
+                            Kontakt
+                        </a>
+                    </li>
+                    <li class="nav__item nav__item--socials">
+                        <div class="navbar__icons navbar__icons--mobile navbar__icons--hidden">
+                            <object
+                                type="image/svg+xml"
+                                data="./img/icons/icon_facebook.svg"
+                                class="socialIcon"
+                                onclick="console.log('miau')"
+                                href="https://www.facebook.com/czyzykpiekarniakawiarnia/"
+                            >
+                              Znajdź nas na Facebooku
+                            </object>
+                            <object
+                                type="image/svg+xml"
+                                data="./img/icons/icon_instagram.svg"
+                                class="socialIcon"
+                            >
+                              Nasza galeria na Ingtaramie
+                            </object>
+                            <object
+                                type="image/svg+xml"
+                                data="./img/icons/icon_phone.svg"
+                                class="socialIcon"
+                            >
+                              Zadzwoń i zamów wypieki
+                            </object>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="menuToggler" onClick='toggleMenu()'>
+                    <div class="menuToggler__bar menuToggler__bar1"></div>
+                    <div class="menuToggler__bar menuToggler__bar2"></div>
+                    <div class="menuToggler__bar menuToggler__bar3"></div>
+                </div>
+
+            </div>
+        </nav>
+
+        <section class="offer offer--folded">
+            <div class="offer__container">
+                <a href="./ciasta_tarty" class="offer__square">
+                    <img src="img/offer/tarta_colour.svg" alt="Ciasta, tarty i ciasteczka" class="offer__draw">
+                    <h2 class="offer_header">
+                        Ciasta, tarty i ciasteczka
+                    </h2>
+                </a>
+                <a href="./torty.html" class="offer__square">
+                    <img src="img/offer/tort.svg" alt="Torty na każdą okazję" class="offer__draw">
+                    <h2 class="offer_header">
+                        Torty na każdą okazję
+                    </h2>
+                </a>
+                <a href="./napoje.html" class="offer__square">
+                    <img src="img/offer/coffee.svg" alt="Kawa i herbata" class="offer__draw">
+                    <h2 class="offer_header">
+                        Kawa i herbata
+                    </h2>
+                </a>
+                <a href="./sniadania.html" class="offer__square">
+                    <img src="img/offer/croissant.svg" alt="Śniadania" class="offer__draw">
+                    <h2 class="offer_header">
+                        Śniadania
+                    </h2>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <div class="category" id="cat__ciasta">
+                <div class="category__cateogryImage" style="background-image: url('./img/offer/ciasta.jpg')">
+                    <h2 class="category__header">Ciasta, tarty i ciasteczka</h2>
+                </div>
+                <div class="category__categoryDescription">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo non, dolorem doloribus pariatur maxime fuga tempore velit, esse assumenda eaque, vero sint nobis blanditiis repudiandae nesciunt dicta voluptatibus ea iste dolor eligendi ipsum. Totam quasi similique velit delectus debitis, sed dolore consectetur, est quia dignissimos iure cum ipsum, eligendi et.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quibusdam, repudiandae architecto ipsum rem tenetur eveniet optio amet voluptate illo dignissimos eos itaque perspiciatis in deleniti quia voluptates minus, placeat inventore reiciendis consequatur ipsam magnam omnis. Quia laboriosam quae, reiciendis?
+                    </p>
+
+                </div>
+                <div class="products">
+                    <div class="products__product">
+                        <div
+                            class="products__productImage"
+                            style="background-image: url('./img/offer/cakes/owoce.jpg')">
+                        </div>
+                        <div class="products__productDescription">
+                            <h3 class="products__header">
+                                Ciasta
+                            </h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse velit quasi nesciunt quidem obcaecati cumque numquam minima modi recusandae voluptatem, dolorem cupiditate vitae neque consequatur placeat molestiae, quam impedit, quibusdam vero. Beatae fuga velit nulla error necessitatibus ipsa, perspiciatis pariatur consectetur nam minus debitis blanditiis maiores, iure ex autem animi minima hic quaerat dolore rerum.
+                            <div class="products__readMore">
+                                <a href="./ciasta.html" class="products__readMoreLink">
+                                    Zobacz ofertę ciast
+                                    <img src="./img/icons/readMore.svg" class="products__icon" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__product">
+                        <div
+                            class="products__productImage"
+                            style="background-image: url('./img/offer/cakes/porzeczki.jpg')">
+                        </div>
+                        <div class="products__productDescription">
+                            <h3 class="products__header">
+                                Serniki
+                            </h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, minima atque. Inventore laudantium, excepturi alias blanditiis esse at quo aliquid vel provident consequatur amet qui numquam quidem magni, maxime fugit ut nobis aperiam non cum id temporibus, sed! Atque perspiciatis, praesentium libero maiores et blanditiis aut at voluptatum.
+                            <div class="products__readMore">
+                                <a href="./serniki.html" class="products__readMoreLink">
+                                    Zobacz nasze serniki
+                                    <img src="./img/icons/readMore.svg" class="products__icon" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__product">
+                        <div
+                            class="products__productImage"
+                            style="background-image: url('./img/offer/cakes/smietana.jpg')">
+                        </div>
+                        <div class="products__productDescription">
+                            <h3 class="products__header">
+                                Tarty
+                            </h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis tempore, numquam, unde explicabo quaerat necessitatibus cum, consequuntur natus repellendus voluptatibus eius soluta distinctio quos voluptas iure dolorum doloribus ut! Illo sunt suscipit velit vitae, earum ullam placeat veniam porro adipisci saepe, fugiat eveniet quod iusto, expedita atque blanditiis! Magni quibusdam ducimus sint aut totam inventore voluptas facere. Architecto omnis ut reiciendis, doloribus cumque, voluptates voluptate obcaecati quos velit ipsa eaque.
+                            <div class="products__readMore">
+                                <a href="./tarty.html" class="products__readMoreLink">
+                                    Zobacz ofertę tart
+                                    <img src="./img/icons/readMore.svg" class="products__icon" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__product">
+                        <div
+                            class="products__productImage"
+                            style="background-image: url('./img/offer/cakes/cytryna.jpg')">
+                        </div>
+                        <div class="products__productDescription">
+                            <h3 class="products__header">
+                                Bezy
+                            </h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In voluptatem aut neque voluptatibus asperiores omnis cum, amet optio ullam vero, velit, aliquam minima nesciunt. Quod, minima. Quis temporibus optio, tempora nostrum amet dolorum, voluptatibus asperiores enim necessitatibus molestiae dolore repudiandae maiores odit modi illo dignissimos dolores rem! Nam ad voluptatum earum alias numquam voluptas, possimus!
+                            <div class="products__readMore">
+                                <a href="./bezy.html" class="products__readMoreLink">
+                                    Zobacz nasze bezy
+                                    <img src="./img/icons/readMore.svg" class="products__icon" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__product">
+                        <div
+                            class="products__productImage"
+                            style="background-image: url('./img/offer/cakes/jezyny.jpg')">
+                        </div>
+                        <div class="products__productDescription">
+                            <h3 class="products__header">
+                                Ciasteczka
+                            </h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam blanditiis debitis atque ad id optio vero dignissimos beatae eos dicta modi nam, officiis, deleniti, numquam eligendi velit, temporibus. Itaque facilis consequuntur et beatae quo quibusdam voluptatem quasi quis, nobis! Illum placeat tenetur aspernatur dolor culpa odit incidunt velit, fuga consequatur deleniti error quia commodi quaerat quisquam unde optio voluptate provident eaque et repellat, quasi nobis ullam officia natus. Velit tempore facere beatae molestias atque nisi eum quos, ea, praesentium veritatis? Doloremque, ipsam inventore id fuga tenetur quos debitis dolorum corrupti.
+                            <div class="products__readMore">
+                                <a href="./ciasteczka.html" class="products__readMoreLink">
+                                    Zobacz ofertę ciasteczek
+                                    <img src="./img/icons/readMore.svg" class="products__icon" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="footer__container">
+                <div class="footer__section">
+                    <div class="logo logo--footer">
+                        <div class="logo__container">
+                            <object type="image/svg+xml" data="img/logo/logo_footer.svg" class="logo__image--footer">
+                                SVG image failed!
+                            </object>
+                        </div>
+                        <h3 class="logoCaption__main logoCaption__main--small">Czyżyk</h3>
+                        <h3 class="logoCaption__sub logoCaption__sub--small">Ciastki<br/> &Co</h3>
+                    </div>
+                </div>
+
+                <div class="footer__section">
+                    <ul class="footer__menu">
+                        <li class="footer__menuItem">
+                            <a href="./oferta.html" class="footer__menuLink">Oferta</a>
+                        </li>
+                        <li class="footer__menuItem">
+                            <a href="./o_nas.html" class="footer__menuLink">O nas</a>
+                        </li>
+                        <li class="footer__menuItem">
+                            <a href="./kontakt.html" class="footer__menuLink">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__section footer__section--social">
+                    <a href="https://www.facebook.com/czyzykpiekarniakawiarnia/" class="footer__socialLink">
+                        <img src="./img/icons/icon_facebook_white.svg" alt="" class="footer__icon">
+                    </a>
+                    <a href="https://www.instagram.com/czyzyk.kawiarnia/" class="footer__socialLink">
+                        <img src="./img/icons/icon_instagram_white.svg" alt="" class="footer__icon">
+                    </a>
+                    <a href="tel: +48 883 418 249" class="footer__socialLink footer__socialLink--phone">
+                        <img src="./img/icons/icon_phone_white.svg" alt="" class="footer__icon">
+                    </a>
+                </div>
+
+                <div class="footer__section">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolore excepturi dolorum beatae deserunt placeat, itaque, voluptas reiciendis facere quasi a provident tenetur commodi cum quas labore delectus accusamus ex velit nesciunt dignissimos iusto? Consequuntur dolorem, nulla quam possimus molestiae!
+                </div>
+            </div>
+        </section>
+
+
+        <script type="text/javascript" src="js/menuToggler.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    </body>
+</html>
